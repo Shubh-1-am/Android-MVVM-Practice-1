@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.example.coursemanagementapp.ViewModel.MainActivityViewModel;
 import com.example.coursemanagementapp.databinding.ActivityMainBinding;
 import com.example.coursemanagementapp.model.Category;
 import com.example.coursemanagementapp.model.Course;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private  MainActivityViewModel viewModel;
+    private MainActivityViewModel viewModel;
     private ArrayList<Category> categoryList;
     private ArrayList<Course> courseList;
     private ActivityMainBinding activityMainBinding;
@@ -41,8 +42,9 @@ public class MainActivity extends AppCompatActivity {
             // Update UI
 
             categoryList = (ArrayList<Category>) categories;
-            for (Category category : categories)
-                Log.d("TAG", category.getCategoryName());
+            for (Category category : categories) {
+                Log.i("TAG", category.getCategoryName());
+            }
 
             showOnSpinner();
         });
@@ -55,10 +57,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showOnSpinner() {
-        ArrayAdapter<Category> categoryArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, categoryList);
-        categoryArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        ArrayAdapter<Category> categoryArrayAdapter = new ArrayAdapter<>(this, R.layout.spinner_item, categoryList);
+        categoryArrayAdapter.setDropDownViewResource(R.layout.spinner_item);
         activityMainBinding.setSpinnerAdapter(categoryArrayAdapter);
-
     }
 
     public class MainActivityClickHandlers {

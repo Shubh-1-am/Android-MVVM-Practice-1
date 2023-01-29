@@ -18,7 +18,7 @@ public class Course extends BaseObservable {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "course_id")
-    private String courseId;
+    private int courseId;
     @ColumnInfo(name = "course_name")
     private String courseName;
     @ColumnInfo(name = "unit_price")
@@ -30,7 +30,7 @@ public class Course extends BaseObservable {
     public Course() {
     }
 
-    public Course(String courseId, String courseName, String unitPrice, int categoryId) {
+    public Course(int courseId, String courseName, String unitPrice, int categoryId) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.unitPrice = unitPrice;
@@ -38,11 +38,11 @@ public class Course extends BaseObservable {
     }
 
     @Bindable
-    public String getCourseId() {
+    public int getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(String courseId) {
+    public void setCourseId(int courseId) {
         this.courseId = courseId;
         notifyPropertyChanged(BR.courseId);
     }

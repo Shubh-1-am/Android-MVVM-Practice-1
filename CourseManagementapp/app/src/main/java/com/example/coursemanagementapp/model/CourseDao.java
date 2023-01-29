@@ -21,9 +21,11 @@ public interface CourseDao {
     @Delete
     void delete(Course course);
 
-    @Query("SELECT * FROM courses_table")
-    LiveData<List<Course>> getAllCourses();
+//    @Query("SELECT * FROM courses_table")
+//    LiveData<List<Course>> getAllCourses();
 
-    @Query("SELECT * FROM courses_table WHERE category_id = :categoryId")
+    @Query("SELECT * FROM courses_table WHERE category_id == :categoryId")
     LiveData<List<Course>> getAllCoursesByCategoryId(int categoryId);
+
+
 }
