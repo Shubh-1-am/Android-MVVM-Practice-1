@@ -4,8 +4,12 @@
         "source": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-main-36:/layout/content_main.xml"
     },
     {
-        "merged": "com.example.coursemanagementapp-mergeDebugResources-33:/layout/activity_main.xml",
-        "source": "com.example.coursemanagementapp-main-36:/layout/activity_main.xml"
+        "merged": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-mergeDebugResources-33:/layout/activity_add_edit.xml",
+        "source": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-main-36:/layout/activity_add_edit.xml"
+    },
+    {
+        "merged": "com.example.coursemanagementapp-mergeDebugResources-33:/layout/activity_add_edit.xml",
+        "source": "com.example.coursemanagementapp-main-36:/layout/activity_add_edit.xml"
     },
     {
         "merged": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-mergeDebugResources-33:/layout/activity_main.xml",
@@ -14,5 +18,9 @@
     {
         "merged": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-mergeDebugResources-33:/layout/spinner_item.xml",
         "source": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-main-36:/layout/spinner_item.xml"
+    },
+    {
+        "merged": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-mergeDebugResources-33:/layout/course_list_item.xml",
+        "source": "/home/shubham/.gradle/daemon/7.5/com.example.coursemanagementapp-main-36:/layout/course_list_item.xml"
     }
 ]

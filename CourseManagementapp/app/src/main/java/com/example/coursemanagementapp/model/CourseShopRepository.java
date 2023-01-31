@@ -29,6 +29,7 @@ public class CourseShopRepository {
         return courseDao.getAllCoursesByCategoryId(categoryId);
     }
 
+
     public LiveData<List<Category>> getAllCategories() {
         return categoryDao.getAllCategories();
     }

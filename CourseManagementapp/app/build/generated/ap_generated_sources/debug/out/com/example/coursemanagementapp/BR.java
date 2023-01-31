@@ -11,17 +11,19 @@ public class BR {
 
   public static final int clickHandler = 4;
 
-  public static final int courseId = 5;
+  public static final int course = 5;
 
-  public static final int courseName = 6;
+  public static final int courseId = 6;
 
-  public static final int id = 7;
+  public static final int courseName = 7;
 
-  public static final int secondaryClickHandler = 8;
+  public static final int id = 8;
 
-  public static final int secondarySpinnerAdapter = 9;
+  public static final int secondaryClickHandler = 9;
 
-  public static final int spinnerAdapter = 10;
+  public static final int secondarySpinnerAdapter = 10;
 
-  public static final int unitPrice = 11;
+  public static final int spinnerAdapter = 11;
+
+  public static final int unitPrice = 12;
 }

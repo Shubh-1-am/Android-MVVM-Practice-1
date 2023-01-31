@@ -13,7 +13,8 @@ public class ContentMainBindingImpl extends ContentMainBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.recyclerView, 2);
     }
     // views
     @NonNull
@@ -25,10 +26,11 @@ public class ContentMainBindingImpl extends ContentMainBinding  {
     // Inverse Binding Event Handlers
 
     public ContentMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
     }
     private ContentMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
             , (android.widget.Spinner) bindings[1]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];

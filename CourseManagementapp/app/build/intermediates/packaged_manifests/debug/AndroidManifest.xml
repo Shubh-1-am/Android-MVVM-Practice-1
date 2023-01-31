@@ -27,6 +27,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.CourseManagementApp" >
         <activity
+            android:name="com.example.coursemanagementapp.AddEditActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.coursemanagementapp.MainActivity"
             android:exported="true" >
             <intent-filter>

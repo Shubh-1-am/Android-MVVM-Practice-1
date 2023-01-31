@@ -11,12 +11,16 @@ import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 import com.example.coursemanagementapp.MainActivity;
 import com.example.coursemanagementapp.R;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ContentMainBinding extends ViewDataBinding {
+  @NonNull
+  public final RecyclerView recyclerView;
+
   @NonNull
   public final Spinner spinner;
 
@@ -27,8 +31,9 @@ public abstract class ContentMainBinding extends ViewDataBinding {
   protected MainActivity.MainActivityClickHandlers mSecondaryClickHandler;
 
   protected ContentMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Spinner spinner) {
+      RecyclerView recyclerView, Spinner spinner) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.recyclerView = recyclerView;
     this.spinner = spinner;
   }
 
